@@ -1,0 +1,30 @@
+{
+
+        "comics": [
+            {
+                "name": "Batman Year One",
+                "cover": ""
+            },
+            {
+                "name": "Death Note Volume 1 Black",
+                "cover": ""
+            },
+            {
+                "name": "Vinland Saga Volume 1",
+                "cover": ""
+            },
+            {
+                "name": "Hunter x Hunter Volume 4",
+                "cover": ""
+            },
+            {
+                "name": "Fullmetal Alchemist Volume 1",
+                "cover": ""
+            },
+            {
+                "name": "Rurouni Kenshin Volume 19",
+                "cover": ""
+            }
+        ]
+
+}
