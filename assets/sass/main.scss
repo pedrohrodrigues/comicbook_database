@@ -78,7 +78,7 @@ p {
     font-size: 22px;
     font-weight: 500;
     height: 72px;
-    width: 100%;
+    width: 80%;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
@@ -94,6 +94,21 @@ p {
     @include justify-content(center);
 
     width: 500px;
+}
+
+.headerSearchButton {
+    background-color: #5C7E35;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color:#FFFFFF;
+    cursor: pointer;
+    font-size: calc(0.6em + 0.5vw);
+    height: 72px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 20%;
 }
 
 .dropdown-menu.ng-isolate-scope {
@@ -135,6 +150,8 @@ p {
     height: 72px;
     text-decoration: none;
 }
+
+
 
 /* Fim Header */
 

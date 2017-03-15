@@ -1,10 +1,11 @@
 angular.module('appComic',['ui.bootstrap']);
 angular.module('appComic').controller('comicController', function($scope, $http) {
 
-	  var _selected;
+	  var selectedName;
     $scope.comicsFromJson = new Array();
     $scope.comicsNamesFromJson = new Array();
     $scope.selected = undefined;
+    $scope.selectedComic = new Array();
 
 
     $http.get('assets/json/comics_json.json').then(function(response) {
@@ -18,9 +19,10 @@ angular.module('appComic').controller('comicController', function($scope, $http)
 
     $scope.ngModelOptionsSelected = function(value) {
     if (arguments.length) {
-      _selected = value;
+      selectedName = value;
+
     } else {
-      return _selected;
+      return selectedName;
     }
   };
 
@@ -31,6 +33,21 @@ angular.module('appComic').controller('comicController', function($scope, $http)
     },
     getterSetter: true
   };
+
+  $scope.findComic = function(value)
+  {
+    for(var i =0; i<$scope.comicsFromJson.length;i++)
+    {
+      if($scope.comicsFromJson[i].name == $scope.selectedName)
+      {
+        $scope.selectedComic['name']=$scope.comicsFromJson[i].name;
+        $scope.selectedComic['cover']=$scope.comicsFromJson[i].cover;
+        $scope.selectedComic['plot']=$scope.comicsFromJson[i].plot;
+      }
+    }   
+
+      $scope.showSearch=true;
+  }
 
 
 });
