@@ -1,79 +1,76 @@
 @import "compass";
-
+@import "variables";
 
 /* Global */
 
-html
-{
-     font-size:100%;
+html {
+    font-size: 100%;
 }
 
-body{
+body {
     font-family: 'Oswald', sans-serif;
 }
 
-p
-{
+p {
     font-size: calc(0.6em + 0.5vw);
 }
+
 /* END */
 
 /* Utility */
 
-.center
-{
+.center {
     margin: 0 auto;
 }
 
-.base_size
-{
-    max-width:1200px;
-    width:100%;
+.base_size {
+    max-width: 1200px;
+    width: 100%;
 }
 
-.flex
-{
-	@include display-flex;
+.flex {
+    @include display-flex;
 }
 
-.totalWrapper
-{
-	@include flex-wrap(wrap);
-    height:100%;
+.totalWrapper {
+    @include flex-wrap(wrap);
+
+    height: 100%;
 }
 
 /* End Utility */
 
 /* Header */
 
-.mainHeader
-{
-    background:#ffbc00;
-    @include flex-wrap(wrap); 
-    height:340px;
-    @include justify-content(center);  
-    padding:0 0 50px 0;
-    width:100%;
+.mainHeader {
+    background:$mainYellow;
+
+    @include flex-wrap(wrap);
+
+    height: 340px;
+
+    @include justify-content(center);
+
+    padding: 0 0 50px 0;
+    width: 100%;
 }
 
-.headerTitle
-{
-    @include align-items(center); 
-    @include justify-content(center); 
-    width:100%;
+.headerTitle {
+    @include align-items(center);
+    @include justify-content(center);
+
+    width: 100%;
 }
 
-.headerTitle h1
-{
+.headerTitle h1 {
     box-sizing: border-box;
-    color:#FFFFFF;
-    font-size: calc(1.2em + 1.5vw);    
-    padding:50px 0;
-    text-align:center;
+    color: #FFFFFF;
+    font-size: calc(1.2em + 1.5vw);
+    padding: 50px 0;
+    text-align: center;
 }
 
-.headerSearchInput
-{
+.headerSearchInput {
     border: none;
     border-right: #f4db6f;
     color: #b8b8b8;
@@ -89,22 +86,27 @@ p
     text-indent: 27px;
 }
 
+.headerSearchContainer {
+    @include flex-wrap(wrap);
 
-.headerSearchContainer
-{
-    @include flex-wrap(wrap); 
     height: 72px;
-    @include justify-content(center); 
-    width:500px;
+
+    @include justify-content(center);
+
+    width: 500px;
 }
 
-
 .dropdown-menu.ng-isolate-scope {
-	@include align-items(center); 
+    @include align-items(center);
+
     background: #FFFFFF;
-	@include display-flex;
+
+    @include display-flex;
+
     list-style: none;
-     @include flex-wrap(wrap); 
+
+    @include flex-wrap(wrap);
+
     margin: 0;
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
@@ -136,37 +138,41 @@ p
 
 /* Fim Header */
 
-
 /* Search Content */
 
 .searchResultContent {
-	@include justify-content(center);	
-    @include flex-wrap(wrap); 
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+
     width: 100%;
 }
 
-.searchResultContent h3
-{
-    width:100%;
+.searchResultContent h3 {
+    width: 100%;
 }
 
 .noSearchYet {
-    color: #c8c8c8; 
-    @include flex-wrap(wrap); 
+    color: #c8c8c8;
+
+    @include flex-wrap(wrap);
+
     font-size: 20px;
-	@include justify-content(center);	
+
+    @include justify-content(center);
+
     margin-top: 8%;
     width: 212px;
 }
 
 .searchContent {
-	@include justify-content(center);	
+    @include justify-content(center);
+
     width: 100%;
 }
 
 .actionValues {
-
     @include align-items(center);
+
     box-sizing: border-box;
     color: #c8c8c8;
     font-size: 18px;
@@ -183,7 +189,7 @@ p
 }
 
 .wrapperSearchResults h3 {
-    color: #c8c8c8;
+    color: #000000;
 }
 
 .wrapperItensSearch {
@@ -191,6 +197,22 @@ p
     width: 830px;
 }
 
+.itemResult
+{
+	@include flex-wrap(wrap);
+	width:100%;
+}
 
+.imageComicbook
+{
+	@include justify-content(center);
+	width:100%;
+}
+
+.imageComicbook img
+{
+	max-height:500px;
+	width:auto;
+}
 
 /* End Search Content */

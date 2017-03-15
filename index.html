@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 	<head>
-    <meta charset="UTF-8">
-    <title>Comic Book Database</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
-     <link rel="stylesheet" type="text/css" href="assets/css/ui-bootstrap-custom-2.5.0-csp.css"/>   
-    <script src="assets/js/angular.min.js"> </script>	
-    <script src="http://localhost/testetoro/assets/js/ui-bootstrap-tpls-2.4.0.min.js" > </script>
-    <script src="assets/js/comic_controller.js"> </script>
-
+	    <meta charset="UTF-8">
+	    <title>Comic Book Database</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+	    <link rel="stylesheet" type="text/css" href="assets/css/ui-bootstrap-custom-2.5.0-csp.css"/>   
 	</head>
-	<body ng-app="appComic" ng-init="{}" ng-controller="comicController">
+	<body ng-app="appComic"  ng-controller="comicController">
 		<header class="mainHeader base_size center flex">
 			<div class="headerTitle base_size center flex">
 				<h1>Comic Book Database</h1>
@@ -22,17 +18,16 @@
 		<div class="wrapperSearchResults ng-scope">		
 
 			<section class="searchResultContent flex">
-
 				<div class="wrapperItensSearch">
 					<h3> Search Results </h3>
-					
-					<section class="itemSearchResult">
-						
-					</section>
-
-
-				</div>
+					<div search-results></div>
 			</section>
 		</div>
+	    <script src="assets/js/angular.min.js"> </script>	
+
+	    <script src="assets/js/ui-bootstrap-tpls-2.4.0.min.js" > </script>
+	    <script src="assets/js/comic_controller.js"> </script>
+	    <script src="assets/js/directives/searchResults.js"> </script>  
+		
 	</body>
 </html>
