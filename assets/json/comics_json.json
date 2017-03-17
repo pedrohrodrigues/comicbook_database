@@ -18,15 +18,13 @@
             },
             {
                 "name": "Hunter x Hunter",
-                "cover": ""
+                "cover": "assets/images/hunterxhunter.jpg",
+                "plot" : "When Gon learns his father Ging whom he thought was dead is a famous Hunter, he aspires to follow in his footsteps and track down monsters, treasures, and words of magic."
             },
             {
-                "name": "Fullmetal Alchemist",
-                "cover": ""
-            },
-            {
-                "name": "Rurouni Kenshin",
-                "cover": ""
+                "name": "Civil War",
+                "cover": "assets/images/civil-war.jpg",
+                "plot" : "The landscape of the Marvel Universe is changing, and it's time to choose: Whose side are you on? A conflict has been brewing from more than a year, threatening to pit friend against friend, brother against brother - and all it will take is a single misstep to cost thousands their lives and ignite the fuse."
             }
         ]
 

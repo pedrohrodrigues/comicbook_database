@@ -5,6 +5,7 @@ angular.module('appComic').controller('comicController', function($scope, $http)
     $scope.comicsFromJson = new Array();
     $scope.comicsNamesFromJson = new Array();
     $scope.selected = undefined;
+    $scope.showSearch=false;
     $scope.selectedComic = new Array();
 
 

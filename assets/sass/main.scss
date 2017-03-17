@@ -38,6 +38,7 @@ p {
     height: 100%;
 }
 
+
 /* End Utility */
 
 /* Header */
@@ -217,7 +218,14 @@ p {
 .itemResult
 {
 	@include flex-wrap(wrap);
+    opacity:0;
+    transition:1s linear all;
 	width:100%;
+}
+
+.itemResult.show
+{
+    opacity:1;
 }
 
 .imageComicbook
@@ -231,5 +239,7 @@ p {
 	max-height:500px;
 	width:auto;
 }
+
+
 
 /* End Search Content */
